@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins;
+}
+
+.top-bar{
+    background-color: darkorange;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon, .social-text{
+    margin-right: 5px;
+}
+
+.top-bar-inner-span{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon{
+    margin-left: 15px;
+}
+
+.span-space{
+    margin-right: 15px;
+}
+
+.logo-section{
+    max-height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img{
+    border-radius: 50%;
+}
+
+nav, .get-in-touch{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display:inline-block;
+    margin-right: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+nav ul li a:hover{
+    color: #1f9c1f;
+    text-decoration: underline;
+}
+
+.get-in-touch a{
+    text-decoration: none;
+    padding: 15px 40px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #1f9c1f;
+    border-radius: 10px;
+}
+
+.hero-content{
+    background-color: #f0f0f0;
+    /*background-image: linear-gradient(to bottom, rgb(158, 152, 152), #ffffff);*/
+    padding: 100px;
+}
+
+.hero-content .hero-content-p{
+    color: darkorange;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero-content h1{
+    margin-bottom: 30px;
+}
+
+.about-container{
+    width:80%;
+    display: flex;
+    margin: 50px auto;
+}
+
+.about-content{
+    width: 50%;
+}
+
+.about-image{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-image::before{
+    content: '';
+    position: absolute;
+    left: -6.1rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(20deg);
+    width: 40%;
+    height: 140%;
+
+}
+
+.about-container img{
+    max-width: 100%;
+}
+
+/* SERVICES */
+
+.services{
+    background-color: #f0f0f0; 
+}
+
+.services-container{
+    background-color: #f0f0f0;
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+/** MINING SECTOR **/
+.mining-sector{
+    display: flex;
+}
+
+.mining-sector-image{
+    flex-basis: 30%;
+}
+
+.mining-sector-image .image-container{
+    width: 250px;
+    height: 400px;
+    background-color: blue;
+    background-image: url('images/mining.jpg');
+    background-size: cover;
+}
+
+.mining-sector-text{
+    flex-basis: 70%;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.mining-sector-text h3{
+    color: darkorange;
+    margin-bottom: 10px;
+}
+
+.mining-sector-text ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    border-left: 2px solid green;
+    padding-left: 10px;
+}
+
+/** AGRICULTURE SECTOR **/
+.agriculture-sector{
+    display: flex;
+    margin-top: 30px;
+}
+
+.agriculture-sector-image{
+    flex-basis: 30%;
+    padding-left: 73px;
+}
+
+.agriculture-sector-image .image-container{
+    width: 250px;
+    height: 180px;
+    background-color: rgb(127, 127, 224);
+    background-image: url('images/agriculture.jpg');
+    background-size: cover;
+}
+
+.agriculture-sector-text{
+    flex-basis: 70%;
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.agriculture-sector-text h3{
+    color: green;
+    margin-bottom: 10px;
+}
+
+.agriculture-sector-text ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    border-left: 2px solid darkorange;
+    padding-left: 10px;
+}
+
+/* VIDEO */
+.video-background{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+  }  
+
+.background-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    filter: brightness(50%);
+  }
+
+  /* CONTACT US */
+  .contact-us{
+    background-color: darkorange;
+    /* position:absolute; */
+    padding: 50px 0;
+    width: 100%;
+  }
+
+  .contact-us .contact-us-container,.map-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .map-container{
+    margin-bottom: 50px;
+  }
+
+.contact-us-text{
+    flex-basis: 30%;
+    /* background-color: blue; */
+    padding: 10px 0;
+  }
+.contact-us-form{
+    flex-basis: 70%;
+    background-color: white;
+    padding: 10px 20px;
+}
+/** CONTACT US TEXT**/
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border-left: 2px solid green;
+}
+
+.contact-us-icon{
+    font-size: 25px;
+    color: green;
+    margin-bottom: 3px;
+}
+
+.item h4{
+    color: white;
+}
+
+.item p{
+    color: white;
+    font-size: small;
+}
+
+.contact-us-form h3{
+    margin-bottom: 15px;
+    color: green;
+}
+
+input[type = "text"],input[type = "email"], textarea{
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 10px 5px;
+    margin-bottom: 12px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type = "submit"]{
+    padding: 15px 40px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #1f9c1f;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* FOOTER*/
+
+.footer{
+    background-color: black;
+    color: white;
+}
+
+.footer-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.footer-container h3{
+    margin-bottom: 15px;
+    color: green;
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkorange;
+}
+
+.footer-quick-links{
+    color: white;
+}
+
+.footer-quick-links ul li{
+    list-style-type: none;
+}
+
+.footer-quick-links ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.copyright{
+    color: white;
+    display:flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.copyright p{
+    font-size: small;
+}
+
